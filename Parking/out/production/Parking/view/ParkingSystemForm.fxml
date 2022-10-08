@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parkingSystemContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingSystemFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="44.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="7.0" layoutY="8.0" text="Parking System">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="101.0" layoutY="87.0" onAction="#selectVehicleOnAction" prefHeight="30.0" prefWidth="150.0" />
+      <Label layoutX="7.0" layoutY="91.0" text="Select Vehicle">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="13.0" layoutY="148.0" text="Vehicle Type">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="59.0" layoutY="200.0" text="Driver">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbDriver" layoutX="102.0" layoutY="195.0" prefHeight="30.0" prefWidth="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="47.0" layoutX="308.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="218.0" />
+      <Label fx:id="lblDate" layoutX="308.0" layoutY="89.0" text="Label" />
+      <Label fx:id="lblTime" layoutX="400.0" layoutY="88.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="307.0" layoutY="146.0" onAction="#parkVehicleOnAction" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #bdc3c7;" text="Park Vehicle" />
+      <JFXButton layoutX="308.0" layoutY="196.0" onAction="#onDiliveryOnAction" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #dfe6e9;" text="On Dilivery Shift" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="112.0" layoutX="11.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="286.0" />
+      <Label layoutX="65.0" layoutY="260.0" text="Your Parking Slot Number" />
+      <Label fx:id="lblSlot" layoutX="17.0" layoutY="293.0" prefHeight="69.0" prefWidth="273.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="310.0" layoutY="319.0" onAction="#managementLogInOnAction" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: white; -fx-border-color: black;" text="Management Log in" />
+      <Label fx:id="lblType" layoutX="102.0" layoutY="139.0" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #bdc3c7;" />
+   </children>
+</AnchorPane>

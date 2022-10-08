@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDriverFormContext" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="44.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="7.0" layoutY="8.0" text="Add Driver">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="55.0" layoutY="76.0" text="Driver Name">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="110.0" layoutY="117.0" text="NIC">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="83.0" layoutY="206.0" text="Address">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="txtDriverName" layoutX="146.0" layoutY="71.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: #bdc3c7;" />
+      <TextField fx:id="txtDrivingLicenseNo" layoutX="146.0" layoutY="157.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: #bdc3c7;" />
+      <TextField fx:id="txtNic" layoutX="146.0" layoutY="112.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: #bdc3c7;" />
+      <JFXButton layoutX="440.0" layoutY="252.0" onAction="#addDriverOnAction" style="-fx-border-color: blue;" text="Add Driver" />
+      <Label layoutX="11.0" layoutY="162.0" text="Driving License No">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="64.0" layoutY="258.0" text="Contact No">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="146.0" layoutY="201.0" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #bdc3c7;" />
+      <TextField fx:id="txtContactNo" layoutX="146.0" layoutY="253.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: #bdc3c7;" />
+   </children>
+</AnchorPane>

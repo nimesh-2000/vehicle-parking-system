@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleFormContext" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="44.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="7.0" layoutY="8.0" text="Add Vehicle">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="42.0" layoutY="91.0" text="Vehicle Number">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="349.0" layoutY="91.0" text="Vehicle Type">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="31.0" layoutY="153.0" text="Maximum Weight">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="31.0" layoutY="215.0" text="No Of Passengers">
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="156.0" layoutY="86.0" prefHeight="31.0" prefWidth="177.0" style="-fx-background-color: #bdc3c7;" />
+      <TextField fx:id="txtNoOfPassengers" layoutX="156.0" layoutY="210.0" prefHeight="31.0" prefWidth="177.0" style="-fx-background-color: #bdc3c7;" />
+      <TextField fx:id="txtMaximumWeight" layoutX="156.0" layoutY="148.0" prefHeight="31.0" prefWidth="177.0" style="-fx-background-color: #bdc3c7;" />
+      <ComboBox fx:id="cmbVehicleType" layoutX="440.0" layoutY="86.0" prefWidth="150.0" style="-fx-background-color: #bdc3c7;" />
+      <JFXButton layoutX="399.0" layoutY="241.0" onAction="#addVehicleOnAction" style="-fx-border-color: blue;" text="Add Vehicle" />
+   </children>
+</AnchorPane>

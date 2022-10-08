@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inParkingFormContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdc3c7" height="44.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="7.0" layoutY="8.0" text="Parking System">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton layoutX="228.0" layoutY="70.0" onAction="#addVehicleOnAction" style="-fx-border-color: blue;" text="Add Vehicle" />
+      <JFXButton layoutX="337.0" layoutY="69.0" onAction="#addDriverOnAction" style="-fx-border-color: blue;" text="Add Driver" />
+      <JFXButton fx:id="btnLogOut" layoutX="446.0" layoutY="68.0" onAction="#logOutOnAction" style="-fx-border-color: blue;" text="Log Out" />
+      <TableView fx:id="tblInParking" layoutX="28.0" layoutY="143.0" prefHeight="200.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="126.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="117.0" text="Vehicle Type" />
+            <TableColumn fx:id="colSlotNo" prefWidth="135.0" text="Slot Number" />
+            <TableColumn fx:id="colParkedTime" prefWidth="173.0" text="Parked Time" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmbInParking" layoutX="27.0" layoutY="69.0" onAction="#InParkingOnAction" prefHeight="31.0" prefWidth="165.0" promptText="In Parking" />
+   </children>
+</AnchorPane>
